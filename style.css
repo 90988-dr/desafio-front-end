@@ -1,0 +1,111 @@
+/* Estilos Gerais para o Corpo da Página */
+body {
+  font-family: 'Arial', sans-serif; /* Fonte simples e legível */
+  margin: 0; /* Remove a margem padrão do navegador */
+  padding: 20px; /* Adiciona algum preenchimento em volta do conteúdo */
+  background-color: #f4f4f4; /* Cor de fundo cinza claro */
+  color: #333; /* Cor do texto padrão */
+  line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+  display: flex; /* Para centralizar o conteúdo */
+  flex-direction: column; /* Coloca os elementos em coluna */
+  align-items: center; /* Centraliza horizontalmente */
+  min-height: 100vh; /* Garante que o body ocupa pelo menos toda a altura da viewport */
+  box-sizing: border-box; /* Inclui padding e border no tamanho total */
+}
+
+/* Estilos para o Título Principal */
+h1 {
+  color: #2a7ae2; /* Um tom de azul agradável */
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 20px; /* Espaço abaixo do título */
+  font-size: 2.5em; /* Tamanho maior para o título */
+}
+
+/* Estilos para Parágrafos */
+p {
+  text-align: center; /* Centraliza o texto dos parágrafos */
+  max-width: 700px; /* Limita a largura dos parágrafos para melhor leitura */
+  margin: 0 auto 15px auto; /* Centraliza e adiciona margem abaixo */
+}
+
+/* Estilos para a Imagem */
+img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 10px; /* Bordas arredondadas para a imagem */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar a imagem */
+  margin: 25px 0; /* Espaçamento em cima e em baixo da imagem */
+  display: block; /* Garante que a margem auto funcione para centralizar */
+}
+
+/* Estilos para o Título dos Hobbies */
+h2 {
+  color: #2a7ae2; /* Mesma cor do H1 */
+  text-align: center;
+  margin-top: 30px; /* Espaço acima do título dos hobbies */
+  margin-bottom: 15px;
+  font-size: 2em;
+}
+
+/* Estilos para a Lista de Hobbies */
+ul {
+  list-style: none; /* Remove os marcadores de lista padrão */
+  padding: 0; /* Remove o preenchimento padrão da lista */
+  text-align: center; /* Centraliza os itens da lista */
+  margin-bottom: 30px; /* Espaço abaixo da lista */
+}
+
+ul li {
+  background-color: #e0f2f7; /* Cor de fundo suave para cada item */
+  margin: 8px 0; /* Espaço entre os itens da lista */
+  padding: 10px 20px; /* Preenchimento dentro de cada item */
+  border-radius: 5px; /* Bordas arredondadas para os itens */
+  display: inline-block; /* Para que os itens fiquem lado a lado se houver espaço */
+  min-width: 150px; /* Largura mínima para os botões/itens */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra suave */
+}
+
+/* ---------------------------------------------------- */
+/* Media Queries para Responsividade (Mobile-Friendly) */
+/* ---------------------------------------------------- */
+
+/* Para telas menores que 768px (tablets e smartphones) */
+@media (max-width: 768px) {
+  body {
+    padding: 15px; /* Reduz o preenchimento em telas menores */
+  }
+
+  h1 {
+    font-size: 2em; /* Reduz o tamanho do título principal */
+  }
+
+  h2 {
+    font-size: 1.8em; /* Reduz o tamanho do título dos hobbies */
+  }
+
+  p {
+    max-width: 90%; /* Permite que os parágrafos usem mais largura */
+  }
+
+  ul li {
+    display: block; /* Faz com que os itens da lista fiquem em bloco (um por linha) */
+    width: 90%; /* Ocupam a maior parte da largura */
+    margin: 10px auto; /* Centraliza e adiciona mais margem */
+    font-size: 0.95em; /* Reduz ligeiramente o tamanho da fonte */
+  }
+}
+
+/* Para telas muito pequenas (smartphones mais antigos ou visualização muito estreita) */
+@media (max-width: 480px) {
+  body {
+    padding: 10px; /* Mais redução de preenchimento */
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+}
